@@ -1,0 +1,39 @@
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDxzPAtrip0-s2QQPLo4vYP9sT7VhAoOD4</string>
+
+
+
+    <string name="app_name">MSAssistant</string>
+    <string name="motorcyclist_safety_assistant">Motorcyclist Safety Assistant</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="if_you_don_t_have_account">If you don\'t have account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_here">Login here</string>
+    <string name="welcome_to_motorcyclist_safety_assistant_app">Welcome to Motorcyclist Safety Assistant App</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in_cap">Sign In</string>
+    <string name="already_have_an_account">Already have an account?</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="emergency_assistance">Emergency Assistance</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="report">Report</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="sos">SOS</string>
+    <string name="real_center">Real Center</string>
+    <string name="real_right">Real Right</string>
+    <string name="real_left">Real Left</string>
+</resources>

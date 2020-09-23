@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/parentColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:background="@color/parentColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:background="@color/parentColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:background="@drawable/cardview_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                            android:background="@drawable/cardview_layout"
+                            android:id="@+id/digit_speed_view"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_marginTop="15dp"
+                            android:layout_centerHorizontal="true"
+                            app:speed="0"
+                            app:unit="kmh"
+                            app:showUnit="true"
+                            app:unitTextSize="5dp"
+                            app:speedTextColor="@android:color/holo_blue_light"
+                            app:unitTextColor="@android:color/holo_red_dark" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/button_view_real"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/digit_speed_view"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent">
+
+                            <Button
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:id="@+id/btn_real_left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/green"
+                                android:background="@drawable/sos_back_ground"
+                                android:textSize="15sp"
+                                android:text="@string/real_left" />
+
+                            <Button
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:id="@+id/btn_real_center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textColor="@color/green"
+                                android:layout_marginStart="40dp"
+                                android:background="@drawable/sos_back_ground"
+                                android:layout_toEndOf="@id/btn_real_left"
+                                android:text="@string/real_center" />
+
+                            <Button
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:id="@+id/btn_real_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textColor="@color/green"
+                                android:layout_marginStart="40dp"
+                                android:background="@drawable/sos_back_ground"
+                                android:layout_toEndOf="@id/btn_real_center"
+                                android:text="@string/real_right" />
+
+
+                        </RelativeLayout>
+
+
+
+                        <ImageView
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_below="@+id/button_view_real"
+                            android:id="@+id/img_bike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/bike"
+                            android:contentDescription="@string/profile_image" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/button_view"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_bike"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent">
+
+                            <Button
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:id="@+id/btn_left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/green"
+                                android:background="@drawable/sos_back_ground"
+                                android:textSize="15sp"
+                                android:text="@string/left" />
+
+                            <Button
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:id="@+id/btn_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textColor="@color/green"
+                                android:layout_marginStart="40dp"
+                                android:background="@drawable/sos_back_ground"
+                                android:layout_toEndOf="@id/btn_left"
+                                android:text="@string/right" />
+
+
+                        </RelativeLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/mapHolder"
+                            android:layout_below="@+id/button_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_200sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="12dp">
+
+                            <com.google.android.gms.maps.MapView
+                                android:background="@drawable/cardview_layout"
+                                android:minHeight="@dimen/_200sdp"
+                                android:id="@+id/map"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <Button
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_below="@+id/mapHolder"
+                            android:id="@+id/btn_sos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red"
+                            android:background="@drawable/sos_back_ground"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/sos" />
+
+
+                    </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "757771697033",
+    "firebase_url": "https://motorcyclist-safety-assistant.firebaseio.com",
+    "project_id": "motorcyclist-safety-assistant",
+    "storage_bucket": "motorcyclist-safety-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757771697033:android:73d39929d44b7c8434bf58",
+        "android_client_info": {
+          "package_name": "com.example.msassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757771697033-09crgircu4d06qlljbmo6aekrnt0c7f7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.msassistant",
+            "certificate_hash": "0f542f8be35228960a0b23a831c96d3b63314155"
+          }
+        },
+        {
+          "client_id": "757771697033-16osogtppe47b9u8a85dbhdv4fnoc5gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOQMrZtMW3dMeDF0BJrWrRXOOyfEOJDu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757771697033-16osogtppe47b9u8a85dbhdv4fnoc5gj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
