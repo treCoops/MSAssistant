@@ -145,13 +145,22 @@ public class Fragment_Home extends Fragment implements OnMapReadyCallback, Locat
                             break;
                     }
 
-                    if(Integer.parseInt(dataSnapshot.child("360").getValue().toString()) == 0){
+                    if(Integer.parseInt(dataSnapshot.child("AcceleroMeter").getValue().toString()) == 1){
                         btn_left.setTextColor(getResources().getColor(R.color.red));
+                        btn_right.setTextColor(getResources().getColor(R.color.green));
                     }
 
-                    if(Integer.parseInt(dataSnapshot.child("360").getValue().toString()) == 0){
+                    if(Integer.parseInt(dataSnapshot.child("AcceleroMeter").getValue().toString()) == 2){
                         btn_right.setTextColor(getResources().getColor(R.color.red));
+                        btn_left.setTextColor(getResources().getColor(R.color.green));
                     }
+
+                    if(Integer.parseInt(dataSnapshot.child("AcceleroMeter").getValue().toString()) == 0){
+                        btn_left.setTextColor(getResources().getColor(R.color.green));
+                        btn_right.setTextColor(getResources().getColor(R.color.green));
+                    }
+
+
 
 
                 }catch (NullPointerException e){
